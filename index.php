@@ -59,6 +59,8 @@ IF ($display == 'form')	{
 	        <p>Gaslands: Legacy is an exciting new game mode for Gaslands, coming soon via <a href="https://gaslands.com/blaster">BLASTER</a>.</p>
 	    
 	   	</div>
+		
+		<footer class="small">[<a href="https://github.com/crikeymiles2/gaslands-legacy">Source</a>]</footer>
 
 	</div>
 	

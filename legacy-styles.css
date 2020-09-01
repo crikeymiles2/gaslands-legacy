@@ -122,6 +122,10 @@ body {
 	      font-size: 70%;
 	  }
 	  
+	  .small {
+		  font-size: 80%;
+	  }
+	  
 	  .centred {
 	      text-align: center;
 	  }
