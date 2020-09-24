@@ -182,21 +182,21 @@ body {
  		color: white;
 	  }
 	  
-	  div#advancements {
+	  div#mutations {
 		  margin-bottom: 20px;
 	  }
 	  
-	  div#advancements p {
+	  div#mutations p {
 		  margin: 15px 0px;
 	  }
 	  
-	  #advancements button {
+	  #mutations button {
 		font-size: 100%;  
 		width: 240px;
 		color: white;
 	  }
 	  
-	  p.unlocked-advancement {
+	  p.unlocked-mutation {
 		  line-height: 29px;
 		  padding-left: 15px;
 		  border-left: 2px solid #d2b00f;		  

@@ -7,6 +7,7 @@ Bleak
 Blessed
 Cosmic
 Colossal
+Cruise
 Dark
 Death
 Demon

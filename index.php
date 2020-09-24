@@ -2,7 +2,7 @@
 
 <html lang="en">
 <head>
-	<title>Gaslands: Legacy</title>
+	<title>Gaslands: Legacy<?php IF(ISSET($_GET['vehicle-name'])) { echo " - " . $_GET['vehicle-name']; } ?></title>
 	<meta name="description" content="Create your Gaslands: Legacy vehicle!">
 	<link href="https://fonts.googleapis.com/css?family=Orbitron|Press+Start+2P|Quantico|Russo+One|VT323|Roboto" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -64,6 +64,7 @@ IF ($display == 'form')	{
 
 	</div>
 	
+	
 <?php   
 
 } ELSE {
@@ -77,7 +78,7 @@ $upgrades = file_get_contents('upgrades.txt');
 $perk_costs = file_get_contents('perk_costs.txt');
 $weapon_costs = file_get_contents('weapon_costs.txt');
 $upgrade_costs = file_get_contents('upgrade_costs.txt');
-$advancements = file_get_contents('advancements.txt');
+$mutations = file_get_contents('mutations.txt');
 
 // Create an array form the files of the files
 $perks = explode("\n", $perks);
@@ -86,7 +87,7 @@ $upgrades = explode("\n", $upgrades);
 $perk_costs = explode("\n", $perk_costs);
 $weapon_costs = explode("\n", $weapon_costs);
 $upgrade_costs = explode("\n", $upgrade_costs);
-$advancements = explode("\n", $advancements);
+$mutations = explode("\n", $mutations);
 
 // Stats Setup
 $default_stats['buggy']['hull'] = 6;
@@ -375,6 +376,7 @@ if($upgrades_quantity) {
 ////////////////////////////////////////////////////////////////
 //// Perks
 
+/*
 $perks_roll = substr($vehicle_hash,6,1);
 
 switch ($perks_roll) {
@@ -399,6 +401,8 @@ switch ($perks_roll) {
     default:
         $quantity = 1;
 }
+*/
+$quantity = 3;
 
 $perks_quantity = $quantity;
 if($vehicle_type == "truck") { $perks_quantity--; }
@@ -446,47 +450,48 @@ IF (($weapons_quantity + $upgrades_quantity + $perks_quantity) < 3) {
 		<td><p><?php IF($upgrades_list) { echo implode(", ",$upgrades_list); } ELSE { echo "None"; } ?>.</p></td></tr>	
 
 		<tr><th><p>Perks:</p></th>			
-		<td><p><?php IF($perks_list) { echo implode(", ",$perks_list); } ELSE { echo "None"; } ?>.</p></td></tr>
+		<td><p><?php IF($perks_list) { echo implode(", ",array_filter($perks_list)); } ELSE { echo "None"; } ?>.</p></td></tr>
+	<tr class="spacer"><th><p></p></td></tr>
+	<tr><th><p>Vehicle Rating:</p></th>	<td><p><?php echo $vehicle_cost; ?> Cans (+ mutations)</p></td></tr>
+
 </table>
 </div>		
 
-<div class="" id="advancements">
+<div class="" id="mutations">
 <table class="fields">
 	<tr>
-		<th><p>Advancements:</p></th>
+		<th><p>Mutations:</p></th>
 		
 		<td><?php 
 				
-		    for ($x = 1; $x < 7; $x++) {
+		    for ($x = 1; $x < 11; $x++) {
 
 				$url = 'https://gaslands.com' . $_SERVER['REQUEST_URI'];
 				
 				$adv_param = "adv" . $x;
 				
 				// The secret code to unlock this achievement is the hash of the name of the vehicle plus the string "advX=unlocked"
-				$advancement_unlock_code = numHash($vehicle_name . $vehicle_type . '&adv' . $x . '=unlocked',4);
+				$mutation_unlock_code = numHash($vehicle_name . $vehicle_type . '&adv' . $x . '=unlocked',4);
 				
-				IF ($_GET[$adv_param] == $advancement_unlock_code) {
-					$url .= '&adv' . $x . '=' . $advancement_unlock_code;
-					$advancement_number = ltrim(substr($advancement_unlock_code,1,2), '0');
-					IF ( $advancement_number == NULL ) { $advancement_number = 0; }
-					$vehicle_cost = $vehicle_cost + 5;
-					echo '<p class="unlocked-advancement">' . $advancements[$advancement_number] . '</p>'; 
+				IF ($_GET[$adv_param] == $mutation_unlock_code) {
+					$url .= '&adv' . $x . '=' . $mutation_unlock_code;
+					$mutation_number = floor(ltrim(substr($mutation_unlock_code,1,2), '0') / 2);
+					//echo "mutation_number " . $mutation_number;
+					IF ( $mutation_number == NULL ) { $mutation_number = 0; };
+					echo '<p class="unlocked-mutation">' . $mutations[$mutation_number] . '</p>'; 
 					// TO DO: It's still possible to unlock the same template twice: https://gaslands.com/legacy/?vehicle-name=%09Hi+Beam&vehicle-type=Car&adv5=3577&adv4=1895&adv3=1881&adv2=3634&adv1=2898&adv6=1807
 				}
 				
 				else {
 					//$url .= '&adv' . $x . '=unlocked';
-					$url .= '&adv' . $x . '=' . $advancement_unlock_code;
-					echo '<p><a href="' . $url . '"><button>Advancement</button></a></p>';
+					$url .= '&adv' . $x . '=' . $mutation_unlock_code;
+					echo '<p><a href="' . $url . '"><button>Mutation</button></a></p>';
 				}
 		        
 		    }   
 		?></td>
 		
 	</tr>
-	<tr class="spacer"><th><p></p></td></tr>
-	<tr><th><p>Vehicle Rating:</p></th>	<td><p><?php echo $vehicle_cost; ?> Cans</p></td></tr>
 </table>
 
 </div>
