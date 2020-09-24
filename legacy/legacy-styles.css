@@ -1,0 +1,203 @@
+body {
+		  font-family: 'Russo One', sans-serif;
+		 // font-family: 'Orbitron', sans-serif;
+		 // font-family: 'Press Start 2P', cursive;
+		 // font-family: 'Quantico', sans-serif;
+ 		 // font-family: 'Roboto', sans-serif;
+		 // font-family: 'VT323', monospace;
+	  }
+	  
+	  body.print {
+		   background-color: white;
+		   color: black;
+	  }
+	  
+	  body.screen {
+		  background-color: #242323;
+		  color: #d2b00f;
+	  }
+	  
+	  h1, table.fields th, button, select, input { 
+		  font-family: 'Russo One', sans-serif;
+	  }
+	 
+	  table.fields th {
+	  	width: 150px;
+		}
+		
+
+	  
+	  @media only screen and (min-width: 560px) {
+		  body {
+		  	font-size: 120%;
+		  }
+		  .container {
+			  width: 500px;
+			  height: 300px;
+			  margin: 20px auto;
+			  padding-bottom: 100px;
+		  }
+		  table.fields th {	  
+			  width: 180px;
+		  }
+	  }
+	  
+	   @media only screen and (min-width: 768px) {
+		   body {
+		   	 font-size: 150%;
+		   }
+	 	  .container {
+	 		  width: 800px;
+	 		  height: 500px;
+	 		  margin: 100px auto;
+	 		  padding-bottom: 100px;
+	 	  }
+		  table.fields th {	  
+			  width: 200px;
+		  }
+		
+		  
+	   }
+	   
+	  p {
+		  margin: 0.3em 0;
+	  } 
+	 
+	  body.screen p,
+	  body.screen table.fields td p {
+	      color: white;
+	  }
+	  
+	  body.print p,
+	  body.print table.fields td p  {
+	      color: grey;
+	  }
+	  
+	  body.print table.fields th p {
+		  color: black;
+	  }
+	  
+	  body.screen a {
+	      color: #d2b00f;
+	  }
+	  
+	  body.print a {
+	      color: grey;
+	  }
+	  
+	  
+	  th, td {
+		  vertical-align: top;
+	  }
+	  
+	  table.fields {
+		  margin-bottom: 20px;
+	  }
+	  
+	  table.fields tr.spacer {
+		  height: 20px;
+	  }
+	  
+	  table.fields th p,
+	  table.fields td p {
+		  margin: 0.1em 0;
+	  } 
+	  
+
+	  table.fields th p {
+		  color: #d2b00f;
+		  text-align: right;
+		  padding-right: 10px;
+	  }
+	  
+	  table.fields td p {
+		  color: white;
+	  }
+	  
+	  h3 {
+		  margin: 0.8em 0 0.3em 0;
+	  } 
+	  
+	  h4 {
+	      font-size: 70%;
+	  }
+	  
+	  .small {
+		  font-size: 80%;
+	  }
+	  
+	  .centred {
+	      text-align: center;
+	  }
+	  
+	  .caps {
+	  	text-transform: uppercase;
+	  }
+	  
+	  body.screen div.divider {
+		  border-top: 2px solid #d2b00f;
+	  }
+	  
+	  body.print div.divider {
+		  border-top: 2px solid grey;
+	  }
+	  
+	  button, select, input {
+		  -webkit-appearance: none;
+	      -moz-appearance: none;
+	      appearance: none;       /* Remove default arrow */
+	  	  font-size: 100%;
+		  padding: 3px 6px;
+	  }
+	  
+	  body.screen button, 
+	  body.screen select, 
+	  body.screen input {
+		  color: #d2b00f;
+		  background-color: #242323;
+		  border: 2px solid #d2b00f;
+	  }
+	  
+	  body.print button, 
+	  body.print select, 
+	  body.print input {
+		  color: black;
+		  background-color: white;
+		  border: 2px solid black;
+	  }
+	  
+	  
+	  select {
+	      
+	  }
+	  
+	  button {
+	  	font-size: 150%;
+		padding: 3px 10px;
+		cursor: pointer;
+	  }
+	  
+	  button:active {
+		 background-color: #d2b00f;
+ 		color: white;
+	  }
+	  
+	  div#mutations {
+		  margin-bottom: 20px;
+	  }
+	  
+	  div#mutations p {
+		  margin: 15px 0px;
+	  }
+	  
+	  #mutations button {
+		font-size: 100%;  
+		width: 240px;
+		color: white;
+	  }
+	  
+	  p.unlocked-mutation {
+		  line-height: 29px;
+		  padding-left: 15px;
+		  border-left: 2px solid #d2b00f;		  
+		  }
