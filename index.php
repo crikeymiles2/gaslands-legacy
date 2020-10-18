@@ -4,9 +4,25 @@
 <head>
 	<title>Gaslands: Legacy<?php IF(ISSET($_GET['vehicle-name'])) { echo " - " . $_GET['vehicle-name']; } ?></title>
 	<meta name="description" content="Create your Gaslands: Legacy vehicle!">
+	<meta property="og:site_name" content="Gaslands" />
+	<meta property="og:image" content="https://i2.wp.com/gaslands.com/wp-content/uploads/SKM_C25820092208520_grunge.jpg?fit=900%2C637&amp;ssl=1" />
 	<link href="https://fonts.googleapis.com/css?family=Orbitron|Press+Start+2P|Quantico|Russo+One|VT323|Roboto" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<link rel="stylesheet" type="text/css" href="legacy-styles.css">  
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-68265959-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-68265959-1');
+	</script>
+
+	
+	
+	
 </head>
 
 <body <?php IF ($_GET['print']) { echo 'class="print"'; } ELSE { echo 'class="screen"'; } ?>>
@@ -60,7 +76,10 @@ IF ($display == 'form')	{
 	    
 	   	</div>
 		
-		<footer class="small">[<a href="https://github.com/crikeymiles2/gaslands-legacy">Source</a>]</footer>
+		<footer class="small">
+		
+			<h4><a href="https://gaslands.com/legacy/Gaslands_Legacy_DashboardCards.pdf">Dashboard Cards (PDF)</a> | <a href="https://gaslands.com/legacy/Gaslands_Legacy_Movement_Templates.pdf">Movement Templates (PDF)</a> | <a href="https://github.com/crikeymiles2/gaslands-legacy">Source Code</a></h4>
+		</footer>
 
 	</div>
 	
@@ -457,14 +476,22 @@ IF (($weapons_quantity + $upgrades_quantity + $perks_quantity) < 3) {
 </table>
 </div>		
 
-<div class="" id="mutations">
+<div id="mutations" class="divider">
 <table class="fields">
 	<tr>
 		<th><p>Mutations:</p></th>
 		
 		<td><?php 
+			
+			$filtered = array();
+
+			foreach($_GET as $key => $value)
+			  if(preg_match('/adv\d/',$key))
+			    $filtered[] = $key;
+
+			$number_of_mutations_to_display = count($filtered) + 1;
 				
-		    for ($x = 1; $x < 11; $x++) {
+		    for ($x = 1; $x <= $number_of_mutations_to_display; $x++) {
 
 				$url = 'https://gaslands.com' . $_SERVER['REQUEST_URI'];
 				
@@ -485,7 +512,7 @@ IF (($weapons_quantity + $upgrades_quantity + $perks_quantity) < 3) {
 				else {
 					//$url .= '&adv' . $x . '=unlocked';
 					$url .= '&adv' . $x . '=' . $mutation_unlock_code;
-					echo '<p><a href="' . $url . '"><button>Mutation</button></a></p>';
+					echo '<p><a href="' . $url . '"><button>Gain Mutation</button></a></p>';
 				}
 		        
 		    }   
@@ -508,6 +535,8 @@ IF (($weapons_quantity + $upgrades_quantity + $perks_quantity) < 3) {
 <div class="divider centred">
 	
 	<h4><a href="https://gaslands.com<?php echo $_SERVER['REQUEST_URI']; ?>">VEHICLE LINK</a> | <?php echo $print_link; ?></h4>
+	
+	<h4><a href="https://gaslands.com/legacy/Gaslands_Legacy_DashboardCards.pdf" target="_blank" >Dashboard Cards (PDF)</a> | <a href="https://gaslands.com/legacy/Gaslands_Legacy_Movement_Templates.pdf" target="_blank" >Movement Templates (PDF)</a></h4>
 		
 	<h4><a href="http://gaslands.com/legacy/"><button>Create new vehicle</button></a></h4>
 
