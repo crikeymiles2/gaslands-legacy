@@ -25,7 +25,7 @@
 	
 </head>
 
-<body <?php IF ($_GET['print']) { echo 'class="print"'; } ELSE { echo 'class="screen"'; } ?>>
+<body <?php IF (ISSET($_GET['print'])) { echo 'class="print"'; } ELSE { echo 'class="screen"'; } ?>>
     
     
 <?php
@@ -38,11 +38,11 @@ IF (!$_GET) { $display = 'form'; }
 
 $valid_vehicle_types = array('car', 'performancecar', 'truck', 'buggy');
 
-IF (!in_array(strtolower($_GET['vehicle-type']), $valid_vehicle_types)) { $display = 'form'; }
+IF (ISSET($_GET['vehicle-type'])) { IF (!in_array(strtolower($_GET['vehicle-type']), $valid_vehicle_types)) { $display = 'form'; } }
 
 IF ($display == 'form')	{
 	
-	IF($_GET['random']) { $default_name = randomName(); } ELSE { $default_name = 'Screamliner'; }
+	$default_name = randomName();
 	
 	?>
 	
@@ -57,14 +57,14 @@ IF ($display == 'form')	{
     			
       		  <p>Vehicle Name:
 	
-      			  <input type="text" id="vehicle-name" name="vehicle-name" value= "<?php echo $default_name; ?>" size="20"> <a href="?random=1" style="text-decoration:none;">&#8635</a></p>
+      			  <input type="text" id="vehicle-name" name="vehicle-name" value= "<?php echo $default_name; ?>" size="20"> <a href="" style="text-decoration:none;">&#8635</a>      			  
     			
     			<p>Vehicle Type:			 
     				<select name="vehicle-type">
     				<option selected="selected">Car</option><option >Buggy</option><option value="PerformanceCar">Performance Car</option><option >Truck</option></select>
     			</p>	
     				
-    		  <p> <button>Generate</button></p>
+    		  <p> <button id="generate">Generate</button></p>
     
     		   
     		</form>
@@ -75,16 +75,12 @@ IF ($display == 'form')	{
 	        <p>Gaslands: Legacy is an exciting new game mode for Gaslands, coming soon via <a href="https://gaslands.com/blaster">BLASTER</a>.</p>
 	    
 	   	</div>
-		
-		<footer class="small">
-		
-			<h4><a href="https://gaslands.com/legacy/Gaslands_Legacy_DashboardCards.pdf">Dashboard Cards (PDF)</a> | <a href="https://gaslands.com/legacy/Gaslands_Legacy_Movement_Templates.pdf">Movement Templates (PDF)</a> | <a href="https://github.com/crikeymiles2/gaslands-legacy">Source Code</a></h4>
-		</footer>
+	
+<?php
 
-	</div>
-	
-	
-<?php   
+	include('footer.php');
+	   
+?>    	</div>	 <?php  
 
 } ELSE {
   
@@ -162,8 +158,8 @@ function numHash($str, $len=null)
 
 
 // Setup the Vehicle hashes
-$vehicle_hash = numHash($vehicle_name, 8);
-
+$vehicle_hash = numHash($vehicle_name, 10);
+//echo 'hash: ' . $vehicle_hash;
 
 
 
@@ -208,9 +204,8 @@ switch ($hull_roll) {
 }
 
 $hull_modifier = $modifier;
+if($vehicle_type == "buggy") { $hull_modifier = max($hull_modifier,0); }
 $hull = $default_stats[$vehicle_type]['hull'] + $hull_modifier;
-if($vehicle_type == "buggy") { $hull = $hull + 2; }
-
 $vehicle_cost = $vehicle_cost + $modifier;
 
 
@@ -298,6 +293,8 @@ $vehicle_cost = $vehicle_cost + ($modifier * 4);
 ////////////////////////////////////////////////////////////////
 //// Weapons
 
+$weapons_list = [];
+$quantity = 2;
 $weapons_roll = substr($vehicle_hash,4,1);
 
 switch ($weapons_roll) {
@@ -343,7 +340,8 @@ if($vehicle_type == "performancecar" AND $weapons_quantity > 1) { $weapons_quant
 if($weapons_quantity) { 
     
     for ($x = 0; $x < $weapons_quantity; $x++) {
-		$weapons_d100 = ltrim(substr($vehicle_hash,$x,2), '0') + 1;
+		$weapons_d100 = ltrim(substr($vehicle_hash,$x*2,2), '0');
+		//echo " weapons roll: " . $weapons_d100 . "; ";
         $weapons_list[$x] = $weapons[$weapons_d100];
 		$vehicle_cost = $vehicle_cost + $weapon_costs[$weapons_d100];
 		//echo "<p>[" . __LINE__ . ": Cost is now $vehicle_cost]</p>";
@@ -355,6 +353,7 @@ if($weapons_quantity) {
 ////////////////////////////////////////////////////////////////
 //// Upgrades
 
+$upgrades_list = [];
 $upgrades_roll = substr($vehicle_hash,5,1);
 
 switch ($upgrades_roll) {
@@ -383,7 +382,9 @@ if($vehicle_type == "buggy") { $upgrades_quantity = max($upgrades_quantity,1); }
 if($upgrades_quantity) { 
     
     for ($x = 0; $x < $upgrades_quantity; $x++) {
-		$upgrades_d10 = ltrim(substr($vehicle_hash,$x,1), '0') + 1;
+		$upgrades_d10 = substr($vehicle_hash,$x+3,1);
+		//echo " upgrade roll: " . $upgrades_d10 . "; ";
+		if($vehicle_type == "buggy") { $upgrades_d10 = min($upgrades_d10,8); }
         $upgrades_list[$x] = $upgrades[$upgrades_d10];
 		$vehicle_cost = $vehicle_cost + $upgrade_costs[$upgrades_d10];
     }   
@@ -429,8 +430,16 @@ if($vehicle_type == "truck") { $perks_quantity--; }
 if($perks_quantity) { 
     
     for ($x = 0; $x < $perks_quantity; $x++) {
-        $perks_list[$x] = $perks[ltrim(substr($vehicle_hash,$x,2), '0')];
-		$vehicle_cost = $vehicle_cost + $perk_costs[ltrim(substr($vehicle_hash,$x,2), '0')];
+    
+    	$perks_roll = ltrim(substr($vehicle_hash,$x*2,2), '0');
+	    $this_perk = $perks[$perks_roll];
+	    $this_perk_cost = $perk_costs[$perks_roll];
+	    
+        IF (!in_array($this_perk,$perks_list)) { 
+        	$perks_list[$x] = $this_perk;
+	        //echo " perk: " . $perks_list[$x] . ' ';
+			$vehicle_cost = $vehicle_cost + $this_perk_cost; 
+		}
     }   
 }
 
@@ -438,8 +447,13 @@ if($perks_quantity) {
 ////////////////////////////////////////////////////////////////
 //// Brucie bonus if your car sucks
 
-IF (($weapons_quantity + $upgrades_quantity + $perks_quantity) < 3) {
+
+IF ((count(array_filter($weapons_list)) + count(array_filter($upgrades_list)) + count(array_filter($perks_list))) <= 3) {
 	$hull = $default_stats[$vehicle_type]['hull'] + 2;
+	$vehicle_cost = $vehicle_cost + 4;
+	$perks_list[] .= $perks[substr($vehicle_hash,5,1)];
+	$vehicle_cost = $vehicle_cost + $perk_costs[substr($vehicle_hash,5,1)];
+	//echo " bonus! ";
 }
 
 
@@ -447,11 +461,21 @@ IF (($weapons_quantity + $upgrades_quantity + $perks_quantity) < 3) {
 
 ?>
 <div class="container">
-<h1 class="caps centred">Gaslands: Legacy</h1>
+<h1 class="caps centred" id="vehicle-title">Gaslands: Legacy</h1>
+
+<?php
+	IF (ISSET($_GET['print'])) {
+		$print_link = '<a href="https://gaslands.com' . str_replace('&print=1', '', $_SERVER['REQUEST_URI']) . '">VIEW VEHICLE</a>';	
+	} ELSE {
+		$print_link = '<a href="https://gaslands.com' . $_SERVER['REQUEST_URI'] . '&print=1">PRINT VEHICLE</a>';	
+	}
+?>
+
+<h4 class="centred"><a href="https://gaslands.com<?php echo $_SERVER['REQUEST_URI']; ?>">VEHICLE LINK</a> | <?php echo $print_link; ?></h4>
 
 <div class="divider">
 <table class="fields">
-	<tr class="spacer"><th><p></p></td></tr>
+
 	<tr><th><p>Vehicle Name:</p></th>		<td><p><?php echo $_GET['vehicle-name']; ?></p></td></tr>
 	<tr><th><p>Vehicle Type:</p></th>		<td><p><?php IF($vehicle_type == "performancecar") { echo "Performance Car"; } ELSE { echo $_GET['vehicle-type']; } ?></p></td></tr>
 	
@@ -497,16 +521,19 @@ IF (($weapons_quantity + $upgrades_quantity + $perks_quantity) < 3) {
 				
 				$adv_param = "adv" . $x;
 				
-				// The secret code to unlock this achievement is the hash of the name of the vehicle plus the string "advX=unlocked"
+				// The secret code to unlock this achievement is the hash of the name of the vehicle plus the type plus the string "advX=unlocked"
 				$mutation_unlock_code = numHash($vehicle_name . $vehicle_type . '&adv' . $x . '=unlocked',4);
 				
-				IF ($_GET[$adv_param] == $mutation_unlock_code) {
-					$url .= '&adv' . $x . '=' . $mutation_unlock_code;
-					$mutation_number = floor(ltrim(substr($mutation_unlock_code,1,2), '0') / 2);
-					//echo "mutation_number " . $mutation_number;
-					IF ( $mutation_number == NULL ) { $mutation_number = 0; };
-					echo '<p class="unlocked-mutation">' . $mutations[$mutation_number] . '</p>'; 
-					// TO DO: It's still possible to unlock the same template twice: https://gaslands.com/legacy/?vehicle-name=%09Hi+Beam&vehicle-type=Car&adv5=3577&adv4=1895&adv3=1881&adv2=3634&adv1=2898&adv6=1807
+				IF (ISSET($_GET[$adv_param])) {
+					IF ($_GET[$adv_param] == $mutation_unlock_code) {
+					   $url .= '&adv' . $x . '=' . $mutation_unlock_code;
+					   $mutation_number = floor(ltrim(substr($mutation_unlock_code,1,2), '0') / 2);
+					   //echo "mutation_number " . $mutation_number;
+					   IF ( $mutation_number == NULL ) { $mutation_number = 0; };
+					   echo '<p class="unlocked-mutation">' . $mutations[$mutation_number] . '</p>'; 
+					   // TO DO: It's still possible to unlock the same template twice: https://gaslands.com/legacy/?vehicle-name=%09Hi+Beam&vehicle-type=Car&adv5=3577&adv4=1895&adv3=1881&adv2=3634&adv1=2898&adv6=1807
+					   // FIXED in the rules (if you get a duplicate, you just gain a new mutation.)
+					}
 				}
 				
 				else {
@@ -524,27 +551,19 @@ IF (($weapons_quantity + $upgrades_quantity + $perks_quantity) < 3) {
 </div>
 
 
-<?php
-	IF ($_GET['print']) {
-		$print_link = '<a href="https://gaslands.com' . str_replace('&print=1', '', $_SERVER['REQUEST_URI']) . '">VIEW VEHICLE</a>';	
-	} ELSE {
-		$print_link = '<a href="https://gaslands.com' . $_SERVER['REQUEST_URI'] . '&print=1">PRINT VEHICLE</a>';	
-	}
-?>
-
 <div class="divider centred">
-	
-	<h4><a href="https://gaslands.com<?php echo $_SERVER['REQUEST_URI']; ?>">VEHICLE LINK</a> | <?php echo $print_link; ?></h4>
-	
-	<h4><a href="https://gaslands.com/legacy/Gaslands_Legacy_DashboardCards.pdf" target="_blank" >Dashboard Cards (PDF)</a> | <a href="https://gaslands.com/legacy/Gaslands_Legacy_Movement_Templates.pdf" target="_blank" >Movement Templates (PDF)</a></h4>
-		
+			
 	<h4><a href="http://gaslands.com/legacy/"><button>Create new vehicle</button></a></h4>
 
 </div>
 
-<?php } ?>
+<?php
 
-<!--footer><p>Check out Gaslands: Legacy in BLASTER!</p></footer-->
+include('footer.php');
+
+}
+?>
+
 	
 </body>
 </html>
