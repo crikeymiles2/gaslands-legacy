@@ -2,7 +2,7 @@ Increase Handling by 1 permanently.
 Increase Handling by 1 permanently.
 Increase Hull by 2 permanently.
 Increase Hull by 2 permanently.
-Increase Hull by 2 permanently.
+Increase Hull by D6 permanently.
 Gain any one weapon costing 2 cans or less permanently, and increase Crew by 1 permanently.
 Gain any one weapon costing 2 cans or less permanently, and increase Crew by 1 permanently.
 Gain any one weapon costing 2 cans or less permanently, and increase Crew by 1 permanently.
@@ -52,7 +52,7 @@ Increase Handling by 1 permanently.
 Increase Handling by 1 permanently.
 Increase Hull by 2 permanently.
 Increase Hull by 2 permanently.
-Increase Hull by 2 permanently.
+Increase Hull by D6 permanently.
 Gain any one weapon costing 2 cans or less permanently, and increase Crew by 1 permanently.
 Gain any one weapon costing 2 cans or less permanently, and increase Crew by 1 permanently.
 Gain any one weapon costing 2 cans or less permanently, and increase Crew by 1 permanently.

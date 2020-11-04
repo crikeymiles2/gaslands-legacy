@@ -11,7 +11,7 @@ function randomName() {
 	$second = explode("\n", $second);
 	shuffle($second);
 	
-	while(strstr($second,$first)) {
+	while(strstr($second[0],$first[0])) {
 		shuffle($first);
 		shuffle($second);
 	}
