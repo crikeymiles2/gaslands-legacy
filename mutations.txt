@@ -1,100 +1,100 @@
-Increase Handling by 1 permanently.
-Increase Handling by 1 permanently.
-Increase Hull by 2 permanently.
-Increase Hull by 2 permanently.
-Increase Hull by D6 permanently.
+Gain any one Aggression perk permanently.
+Gain any one Aggression perk permanently.
+Gain any one Badass perk permanently.
+Gain any one Badass perk permanently.
+Gain any one Badass perk permanently.
+Gain any one Built perk permanently.
+Gain any one Built perk permanently.
+Gain any one Daring perk permanently.
+Gain any one Daring perk permanently.
+Gain any one Horror perk permanently.
+Gain any one Military perk permanently.
+Gain any one Military perk permanently.
+Gain any one Military perk permanently.
+Gain any one Precision perk permanently.
+Gain any one Precision perk permanently.
+Gain any one Precision perk permanently.
+Gain any one Pursuit perk permanently.
+Gain any one Pursuit perk permanently.
+Gain any one Reckless perk permanently.
+Gain any one Reckless perk permanently.
+Gain any one Speed perk permanently.
+Gain any one Speed perk permanently.
+Gain any one Technology perk permanently.
+Gain any one Technology perk permanently.
+Gain any one Tuning perk permanently.
+Gain any one Tuning perk permanently.
+Gain any one upgrade permanently.
+Gain any one upgrade permanently.
+Gain any one upgrade permanently.
+Gain any one upgrade permanently.
 Gain any one weapon costing 2 cans or less permanently, and increase Crew by 1 permanently.
 Gain any one weapon costing 2 cans or less permanently, and increase Crew by 1 permanently.
 Gain any one weapon costing 2 cans or less permanently, and increase Crew by 1 permanently.
 Gain any one weapon costing 2 cans or less permanently, and increase Crew by 1 permanently.
+Gain any one weapon costing 2 cans or less permanently, and increase Crew by 1 permanently.
+Gain any one weapon costing 2 cans or less permanently, and increase Crew by 1 permanently.
+Gain any one weapon costing 2 cans or less permanently, and increase Crew by 1 permanently.
+Gain any one weapon costing 2 cans or less permanently, and increase Crew by 1 permanently.
+Gain any one weapon costing 4 cans or less permanently, and increase Crew by 1 permanently.
+Gain any one weapon costing 4 cans or less permanently, and increase Crew by 1 permanently.
+Gain any one weapon costing 4 cans or less permanently, and increase Crew by 1 permanently.
 Gain any one weapon costing 4 cans or less permanently, and increase Crew by 1 permanently.
 Gain any one weapon costing 4 cans or less permanently, and increase Crew by 1 permanently.
 Gain any one weapon costing 4 cans or less permanently, and increase Crew by 1 permanently.
 Gain any one weapon permanently, and increase Crew by 1 permanently.
 Gain any one weapon permanently, and increase Crew by 1 permanently.
-Gain any one upgrade permanently.
-Gain any one upgrade permanently.
-Gain any one Aggression perk permanently.
-Gain any one Badass perk permanently.
-Gain any one Built perk permanently.
-Gain any one Daring perk permanently.
-Gain any one Horror perk permanently.
-Gain any one Military perk permanently.
-Gain any one Precision perk permanently.
-Gain any one Pursuit perk permanently.
-Gain any one Reckless perk permanently.
-Gain any one Speed perk permanently.
-Gain any one Technology perk permanently.
-Gain any one Tuning perk permanently.
-Gain any one Aggression perk permanently.
-Gain any one Badass perk permanently.
-Gain any one Built perk permanently.
-Gain any one Daring perk permanently.
-Gain any one Horror perk permanently.
-Gain any one Military perk permanently.
-Gain any one Precision perk permanently.
-Gain any one Pursuit perk permanently.
-Gain any one Reckless perk permanently.
-Gain any one Speed perk permanently.
-Gain any one Technology perk permanently.
-Gain any one Tuning perk permanently.
-This vehicle's team gains the "180" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_180.pdf" target="_blank">Download</a>
-This vehicle's team gains the "Long Bow" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_LongBow.pdf" target="_blank">Download</a>
-This vehicle's team gains the "Bow" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_Bow.pdf" target="_blank">Download</a>
-This vehicle's team gains the "Spiral" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_Spiral.pdf" target="_blank">Download</a>
-This vehicle's team gains the "Doughnut" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_Doughnut.pdf" target="_blank">Download</a>
-This vehicle's team gains the "180" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_180.pdf" target="_blank">Download</a>
-This vehicle's team gains the "Long Bow" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_LongBow.pdf" target="_blank">Download</a>
-This vehicle's team gains the "Bow" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_Bow.pdf" target="_blank">Download</a>
-This vehicle's team gains the "Spiral" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_Spiral.pdf" target="_blank">Download</a>
-This vehicle's team gains the "Doughnut" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_Doughnut.pdf" target="_blank">Download</a>
-Increase Handling by 1 permanently.
-Increase Handling by 1 permanently.
-Increase Hull by 2 permanently.
-Increase Hull by 2 permanently.
-Increase Hull by D6 permanently.
-Gain any one weapon costing 2 cans or less permanently, and increase Crew by 1 permanently.
-Gain any one weapon costing 2 cans or less permanently, and increase Crew by 1 permanently.
-Gain any one weapon costing 2 cans or less permanently, and increase Crew by 1 permanently.
-Gain any one weapon costing 2 cans or less permanently, and increase Crew by 1 permanently.
-Gain any one weapon costing 4 cans or less permanently, and increase Crew by 1 permanently.
-Gain any one weapon costing 4 cans or less permanently, and increase Crew by 1 permanently.
-Gain any one weapon costing 4 cans or less permanently, and increase Crew by 1 permanently.
 Gain any one weapon permanently, and increase Crew by 1 permanently.
 Gain any one weapon permanently, and increase Crew by 1 permanently.
-Gain any one upgrade permanently.
-Gain any one upgrade permanently.
-Gain any one Aggression perk permanently.
-Gain any one Badass perk permanently.
-Gain any one Built perk permanently.
-Gain any one Daring perk permanently.
-Gain any one Horror perk permanently.
-Gain any one Military perk permanently.
-Gain any one Precision perk permanently.
-Gain any one Pursuit perk permanently.
-Gain any one Reckless perk permanently.
-Gain any one Speed perk permanently.
-Gain any one Technology perk permanently.
-Gain any one Tuning perk permanently.
-Gain any one Aggression perk permanently.
-Gain any one Badass perk permanently.
-Gain any one Built perk permanently.
-Gain any one Daring perk permanently.
-Gain any one Horror perk permanently.
-Gain any one Military perk permanently.
-Gain any one Precision perk permanently.
-Gain any one Pursuit perk permanently.
-Gain any one Reckless perk permanently.
-Gain any one Speed perk permanently.
-Gain any one Technology perk permanently.
-Gain any one Tuning perk permanently.
+Increase Crew by 1 permanently.
+Increase Crew by 1 permanently.
+Increase Handling by 1 permanently.
+Increase Handling by 1 permanently.
+Increase Hull by 1 permanently.
+Increase Hull by 1 permanently.
+Increase Hull by 1 permanently.
+Increase Hull by 1 permanently.
+Increase Hull by 1 permanently.
+Increase Hull by 1 permanently.
+Increase Hull by 1 permanently.
+Increase Hull by 2 permanently.
+Increase Hull by 2 permanently.
+Increase Hull by 2 permanently.
+Increase Hull by 3 permanently.
+Increase this vehicle's weight by one class. (If this vehicle is already heavyweight, reveal another mutation.)
+Increase this vehicle's weight by one class. (If this vehicle is already heavyweight, reveal another mutation.)
+One weapon on this vehicle gains turret-mounted.
+One weapon on this vehicle gains turret-mounted.
+One weapon on this vehicle gains turret-mounted.
+One weapon on this vehicle gains turret-mounted.
+This vehicle may ignore 1 of its hazard tokens when checking for wipeout. (This effect can stack.)
+This vehicle may ignore 1 of its hazard tokens when checking for wipeout. (This effect can stack.)
+This vehicle may ignore 1 of its hazard tokens when checking for wipeout. (This effect can stack.)
+This vehicle may ignore 1 of its hazard tokens when checking for wipeout. (This effect can stack.)
+This vehicle may ignore 1 of its hazard tokens when checking for wipeout. (This effect can stack.)
 This vehicle's team gains the "180" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_180.pdf" target="_blank">Download</a>
-This vehicle's team gains the "Long Bow" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_LongBow.pdf" target="_blank">Download</a>
-This vehicle's team gains the "Bow" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_Bow.pdf" target="_blank">Download</a>
-This vehicle's team gains the "Spiral" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_Spiral.pdf" target="_blank">Download</a>
-This vehicle's team gains the "Doughnut" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_Doughnut.pdf" target="_blank">Download</a>
 This vehicle's team gains the "180" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_180.pdf" target="_blank">Download</a>
-This vehicle's team gains the "Long Bow" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_LongBow.pdf" target="_blank">Download</a>
+This vehicle's team gains the "180" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_180.pdf" target="_blank">Download</a>
+This vehicle's team gains the "180" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_180.pdf" target="_blank">Download</a>
+This vehicle's team gains the "180" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_180.pdf" target="_blank">Download</a>
 This vehicle's team gains the "Bow" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_Bow.pdf" target="_blank">Download</a>
-This vehicle's team gains the "Spiral" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_Spiral.pdf" target="_blank">Download</a>
+This vehicle's team gains the "Bow" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_Bow.pdf" target="_blank">Download</a>
+This vehicle's team gains the "Bow" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_Bow.pdf" target="_blank">Download</a>
+This vehicle's team gains the "Bow" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_Bow.pdf" target="_blank">Download</a>
+This vehicle's team gains the "Bow" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_Bow.pdf" target="_blank">Download</a>
 This vehicle's team gains the "Doughnut" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_Doughnut.pdf" target="_blank">Download</a>
+This vehicle's team gains the "Doughnut" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_Doughnut.pdf" target="_blank">Download</a>
+This vehicle's team gains the "Doughnut" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_Doughnut.pdf" target="_blank">Download</a>
+This vehicle's team gains the "Doughnut" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_Doughnut.pdf" target="_blank">Download</a>
+This vehicle's team gains the "Doughnut" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_Doughnut.pdf" target="_blank">Download</a>
+This vehicle's team gains the "Long Bow" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_LongBow.pdf" target="_blank">Download</a>
+This vehicle's team gains the "Long Bow" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_LongBow.pdf" target="_blank">Download</a>
+This vehicle's team gains the "Long Bow" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_LongBow.pdf" target="_blank">Download</a>
+This vehicle's team gains the "Long Bow" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_LongBow.pdf" target="_blank">Download</a>
+This vehicle's team gains the "Long Bow" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_LongBow.pdf" target="_blank">Download</a>
+This vehicle's team gains the "Spiral" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_Spiral.pdf" target="_blank">Download</a>
+This vehicle's team gains the "Spiral" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_Spiral.pdf" target="_blank">Download</a>
+This vehicle's team gains the "Spiral" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_Spiral.pdf" target="_blank">Download</a>
+This vehicle's team gains the "Spiral" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_Spiral.pdf" target="_blank">Download</a>
+This vehicle's team gains the "Spiral" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_Spiral.pdf" target="_blank">Download</a>
+This vehicle's team gains the "Spiral" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_Spiral.pdf" target="_blank">Download</a>

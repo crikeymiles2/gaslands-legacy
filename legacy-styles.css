@@ -1,24 +1,105 @@
+/* GASLANDS LEGACY */
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* FONTS */
+
 body
 {
-	font-family: 'Russo One', sans-serif;
-	// font-family: 'VT323', monospace;
+	/* font-family: 'Russo One', sans-serif; 
+	font-family: 'VT323', monospace; */
+	font-family: 'Cabin', sans-serif;
+	font-weight: 100;
 }
 
+h1, h2, h3, h4, table.fields th, table.fields td, button, select, input, label, .back-button { 
+	font-family: 'Russo One', sans-serif;
+	text-transform: uppercase;
+}
 
-body.print
+.back-button { 
+	font-family: 'Russo One', sans-serif;
+	text-transform: small-caps;
+}
+.back-button a { 
+	text-decoration: none;
+}
+
+body.clue p.fluff
 {
+	font-family: 'Special Elite', sans-serif;
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* COLOURS */
+
+body
+{
+	/* background-color: #242323;
+	color: #d2b00f; */
 	background-color: white;
 	color: black;
 }
 
-body.screen
+body a { color: grey; }
+body h1 a { color: black; }
+
+table.fields th p
 {
-	background-color: #242323;
+	color: black;
+}
+
+body div.divider { border-top: 2px solid grey; }
+
+.cluedump {
+	color: black;
+}
+.cluedump li a {
+	color: black;
+}
+
+body button, 
+	  body.screen select, 
+	  body.screen input
+{
+	background-color: white;
+	border: 2px solid grey;
+}
+
+/* body.screen button {
 	color: #d2b00f;
 }
 
-h1, table.fields th, button, select, input { font-family: 'Russo One', sans-serif; }
-table.fields th { width: 150px; }
+body.screen select, 
+	  body.screen input
+{
+	color: #d2b00f;
+}	  
+
+body.print button, 
+	  body.print select, 
+	  body.print input
+{
+	color: black;
+	background-color: white;
+	border: 2px solid black;
+}
+*/
+
+button:active
+{
+	background-color: #242323;
+	color: white;
+	border: 2px solid grey;
+}
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* SCREEN SIZE ADJUSTMENTS */
+
+
 
 @media only screen and (min-width: 560px)
 {
@@ -48,40 +129,77 @@ table.fields th { width: 150px; }
 	}
 	
 	table.fields th { width: 200px; }
+	#mutations button { width: 280px; }
+	p.unlocked-mutation { line-height: 29px; }
 }
 
-p { margin: 0.3em 0; }
-body.screen p,
-	  body.screen table.fields td p { color: white; }
-body.print p,
-	  body.print table.fields td p { color: grey; }
-body.print table.fields th p { color: black; }
-body.screen a { color: #d2b00f; }
-body.print a { color: grey; }
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* STRUCTURE & LAYOUT */
+
+
+table.fields th { 
+	width: 150px; 
+	}
+
+p { 
+	margin: 0.3em 0; 
+    line-height: 1.3em;
+}
 
 
 h1 {
 	margin-bottom: 0px;
 }
 
+h1 a {
+	text-decoration: none;
+}
+
 h1#vehicle-title {
 	margin-bottom: -12px;
 }
 
-th, td { vertical-align: top; }
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* VEHICLE STATS */
+
+
+th, td { 
+	vertical-align: top; 
+	font-size: 80%;
+	}
+
 table.fields { margin-bottom: 20px; }
+
 table.fields tr.spacer { height: 20px; }
+
 table.fields th p,
-	  table.fields td p { margin: 0.1em 0; }
+table.fields td p { 
+	margin: 0.1em 0; 
+}
+
+table.fields th {
+	padding: auto 0px;
+}
 
 table.fields th p
 {
-	color: #d2b00f;
 	text-align: right;
 	padding-right: 10px;
 }
 
-table.fields td p { color: white; }
+table.fields td p {
+	text-transform: none;
+	color: grey;
+}
+
+
+
 h3 { margin: 0.8em 0 0.3em 0; }
 h4 { font-size: 70%; }
 .small { font-size: 80%; }
@@ -93,9 +211,7 @@ div.divider {
     margin: 20px 0 0 0;
 }
 
-body.screen div.divider { border-top: 2px solid #d2b00f; }
 
-body.print div.divider { border-top: 2px solid grey; }
 
 button, select, input
 {
@@ -107,32 +223,6 @@ button, select, input
 	padding: 3px 6px;
 }
 
-body.screen button, 
-	  body.screen select, 
-	  body.screen input
-{
-	background-color: #242323;
-	border: 2px solid #d2b00f;
-}
-
-body.screen button {
-	color: #d2b00f;
-}
-
-body.screen select, 
-	  body.screen input
-{
-	color: #d2b00f;
-}	  
-
-body.print button, 
-	  body.print select, 
-	  body.print input
-{
-	color: black;
-	background-color: white;
-	border: 2px solid black;
-}
 
 
 button
@@ -142,16 +232,16 @@ button
 	cursor: pointer;
 }
 
-button:active
-{
-	background-color: #d2b00f;
-	color: white;
-}
+
 
 button#generate {
 	margin-top: 10px;
 }
 
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* MUTATIONS */
 
 div#mutations { margin-bottom: 20px; }
 div#mutations p { margin: 15px 0px; }
@@ -159,69 +249,31 @@ div#mutations p { margin: 15px 0px; }
 #mutations button
 {
 	font-size: 100%;
-	width: 280px;
-	color: white;
 }
 
 p.unlocked-mutation
 {
-	line-height: 29px;
 	padding-left: 15px;
-	border-left: 2px solid #d2b00f;
+	border-left: 2px solid black;
 }
 
-abbr
-{
-	text-decoration: none;
-	color: #d2b00f;
-	font-size: 70%;
-}
-
-.tooltip
-{
-	position: relative;
-	display: inline-block;
-	border-bottom: 1px dotted black;
-	color: #d2b00f;
-	font-size: 70%;
-	cursor: pointer;
-}
-
-.tooltip .tooltiptext
-{
-	font-family: sans-serif;
-	font-size: 70%;
-	visibility: hidden;
-	width: 150px;
-	background-color: #242323;
-	color: #fff;
-	text-align: left;
-	border-radius: 6px;
-	padding: 5px;
-	/* Position the tooltip */
-	position: absolute;
-	z-index: 1;
-	top: -5px;
-	left: 105%;
-}
-
-.tooltip:hover .tooltiptext { visibility: visible; }
 
 
 
 body.clue p
 {
-	font-family: 'Roboto', sans-serif;
 	font-weight: 100;
 	line-height: 1.3em;
 }
 
 body.clue p.fluff
 {
-	font-family: 'Special Elite', sans-serif;
 	font-style: italic;
-	line-height: 1.3em;
+	line-height: 1.5em;
+	font-size: 90%; 
+	margin-bottom: 20px;
 }
+
 
 body.clue p.error
 {
@@ -230,6 +282,12 @@ body.clue p.error
 	padding: 5px 0;
 }
 
-body.clue h3 {
-	color: white;
+
+
+.cluedump {
+	font-weight: 100;
+	line-height: 1.3em;
+	text-align: left;
+	font-size:80%;
 }
+
