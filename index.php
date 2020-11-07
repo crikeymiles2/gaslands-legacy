@@ -48,23 +48,23 @@ IF ($display == 'form')	{
 	
 	<div class="container">
 	
-	    <h1 class="caps">Gaslands: Legacy</h1>
+	    <h1 class="caps"><a href="https://gaslands.com/legacy">Gaslands: Legacy</a></h1>
 	
     	<p>In Gaslands: Legacy, every named vehicle has different stats. Look on the bottom of your toy car for its name, enter it below, and see what your are stuck driving!</p>
 
     	<div class="divider centred">
     		<form>
     			
-      		  <p>Vehicle Name:
+      		  <p><label>Vehicle Name:</label>
 	
       			  <input type="text" id="vehicle-name" name="vehicle-name" value= "<?php echo $default_name; ?>" size="20"> <a href="" style="text-decoration:none;">&#8635</a>      			  
     			
-    			<p>Vehicle Type:			 
+    			<p><label>Vehicle Type:</label>		 
     				<select name="vehicle-type">
     				<option selected="selected">Car</option><option >Buggy</option><option value="PerformanceCar">Performance Car</option><option >Truck</option></select>
     			</p>	
     				
-    		  <p> <button id="generate">Generate</button></p>
+    		  <p><button id="generate">Generate</button></p>
     
     		   
     		</form>
@@ -461,7 +461,8 @@ IF ((count(array_filter($weapons_list)) + count(array_filter($upgrades_list)) + 
 
 ?>
 <div class="container">
-<h1 class="caps centred" id="vehicle-title">Gaslands: Legacy</h1>
+<h1 class="caps centred" id="vehicle-title"><a href="https://gaslands.com/legacy">Gaslands: Legacy</a></h1>
+
 
 <?php
 	IF (ISSET($_GET['print'])) {
@@ -471,38 +472,38 @@ IF ((count(array_filter($weapons_list)) + count(array_filter($upgrades_list)) + 
 	}
 ?>
 
-<h4 class="centred"><a href="https://gaslands.com<?php echo $_SERVER['REQUEST_URI']; ?>">VEHICLE LINK</a> | <?php echo $print_link; ?></h4>
+<h4 class="centred"><a href="https://gaslands.com<?php echo $_SERVER['REQUEST_URI']; ?>">VEHICLE LINK</a></h4>
 
 <div class="divider">
 <table class="fields">
 
-	<tr><th><p>Vehicle Name:</p></th>		<td><p><?php echo $_GET['vehicle-name']; ?></p></td></tr>
-	<tr><th><p>Vehicle Type:</p></th>		<td><p><?php IF($vehicle_type == "performancecar") { echo "Performance Car"; } ELSE { echo $_GET['vehicle-type']; } ?></p></td></tr>
+	<tr><th><p>Vehicle&nbsp;Name:</p></th>		<td><p><?php echo $_GET['vehicle-name']; ?></p></td></tr>
+	<tr><th><p>Vehicle&nbsp;Type:</p></th>		<td><p><?php IF($vehicle_type == "performancecar") { echo "Performance Car"; } ELSE { echo $_GET['vehicle-type']; } ?></p></td></tr>
 	
 	<tr class="spacer"><th><p></p></td></tr>
 	<tr><th><p>Hull:</p></th>				<td><p><?php echo $hull; ?></p></td></tr>
-	<tr><th><p>Max Gear:</p></th>			<td><p><?php echo $max_gear; ?></p></td></tr>
+	<tr><th><p>Max&nbsp;Gear:</p></th>			<td><p><?php echo $max_gear; ?></p></td></tr>
 	<tr><th><p>Handling:</p></th>			<td><p><?php echo $handling; ?></p></td></tr>
 	<tr><th><p>Crew:</p></th>				<td><p><?php echo $crew; ?></p></td></tr>
 	<tr class="spacer"><th><p></p></td></tr>
 	
 	<tr><th><p>Weapons:</p></th>			
-		<td><p><?php IF($weapons_list) { echo implode(", ",$weapons_list); } ELSE { echo "None"; } ?>.</p></td></tr>
+		<td><p><?php IF($weapons_list) { echo implode(", ",str_replace(" ","&nbsp;",$weapons_list)); } ELSE { echo "None"; } ?>.</p></td></tr>
 
 	<tr><th><p>Upgrades:</p></th>			
-		<td><p><?php IF($upgrades_list) { echo implode(", ",$upgrades_list); } ELSE { echo "None"; } ?>.</p></td></tr>	
+		<td><p><?php IF($upgrades_list) { echo implode(", ",str_replace(" ","&nbsp;",$upgrades_list)); } ELSE { echo "None"; } ?>.</p></td></tr>	
 
 		<tr><th><p>Perks:</p></th>			
-		<td><p><?php IF($perks_list) { echo implode(", ",array_filter($perks_list)); } ELSE { echo "None"; } ?>.</p></td></tr>
+		<td><p><?php IF($perks_list) { echo implode(", ",str_replace(" ","&nbsp;",array_filter($perks_list))); } ELSE { echo "None"; } ?>.</p></td></tr>
 	<tr class="spacer"><th><p></p></td></tr>
-	<tr><th><p>Vehicle Rating:</p></th>	<td><p><?php echo $vehicle_cost; ?> Cans (+ mutations)</p></td></tr>
+	<tr><th><p>Vehicle&nbsp;Rating:</p></th>	<td><p><?php echo $vehicle_cost; ?> Cans (+ mutations)</p></td></tr>
 
 </table>
 </div>		
 
 <div id="mutations" class="divider">
 <table class="fields">
-	<tr>
+	<tr id="mutations">
 		<th><p>Mutations:</p></th>
 		
 		<td><?php 
@@ -527,7 +528,7 @@ IF ((count(array_filter($weapons_list)) + count(array_filter($upgrades_list)) + 
 				IF (ISSET($_GET[$adv_param])) {
 					IF ($_GET[$adv_param] == $mutation_unlock_code) {
 					   $url .= '&adv' . $x . '=' . $mutation_unlock_code;
-					   $mutation_number = floor(ltrim(substr($mutation_unlock_code,1,2), '0') / 2);
+					   $mutation_number = floor(ltrim(substr($mutation_unlock_code,1,2), '0'));
 					   //echo "mutation_number " . $mutation_number;
 					   IF ( $mutation_number == NULL ) { $mutation_number = 0; };
 					   echo '<p class="unlocked-mutation">' . $mutations[$mutation_number] . '</p>'; 
