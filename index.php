@@ -427,7 +427,9 @@ $quantity = 3;
 $perks_quantity = $quantity;
 if($vehicle_type == "truck") { $perks_quantity--; }
 
-if($perks_quantity) { 
+if($perks_quantity) {
+
+	$perks_list = []; 
     
     for ($x = 0; $x < $perks_quantity; $x++) {
     
