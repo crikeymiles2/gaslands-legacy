@@ -72,29 +72,29 @@ This vehicle may ignore 1 of its hazard tokens when checking for wipeout. (This 
 This vehicle may ignore 1 of its hazard tokens when checking for wipeout. (This effect can stack.)
 This vehicle may ignore 1 of its hazard tokens when checking for wipeout. (This effect can stack.)
 This vehicle may ignore 1 of its hazard tokens when checking for wipeout. (This effect can stack.)
-This vehicle's team gains the "180" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_180.pdf" target="_blank">Download</a>
-This vehicle's team gains the "180" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_180.pdf" target="_blank">Download</a>
-This vehicle's team gains the "180" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_180.pdf" target="_blank">Download</a>
-This vehicle's team gains the "180" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_180.pdf" target="_blank">Download</a>
-This vehicle's team gains the "180" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_180.pdf" target="_blank">Download</a>
-This vehicle's team gains the "Bow" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_Bow.pdf" target="_blank">Download</a>
-This vehicle's team gains the "Bow" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_Bow.pdf" target="_blank">Download</a>
-This vehicle's team gains the "Bow" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_Bow.pdf" target="_blank">Download</a>
-This vehicle's team gains the "Bow" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_Bow.pdf" target="_blank">Download</a>
-This vehicle's team gains the "Bow" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_Bow.pdf" target="_blank">Download</a>
-This vehicle's team gains the "Doughnut" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_Doughnut.pdf" target="_blank">Download</a>
-This vehicle's team gains the "Doughnut" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_Doughnut.pdf" target="_blank">Download</a>
-This vehicle's team gains the "Doughnut" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_Doughnut.pdf" target="_blank">Download</a>
-This vehicle's team gains the "Doughnut" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_Doughnut.pdf" target="_blank">Download</a>
-This vehicle's team gains the "Doughnut" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_Doughnut.pdf" target="_blank">Download</a>
-This vehicle's team gains the "Long Bow" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_LongBow.pdf" target="_blank">Download</a>
-This vehicle's team gains the "Long Bow" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_LongBow.pdf" target="_blank">Download</a>
-This vehicle's team gains the "Long Bow" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_LongBow.pdf" target="_blank">Download</a>
-This vehicle's team gains the "Long Bow" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_LongBow.pdf" target="_blank">Download</a>
-This vehicle's team gains the "Long Bow" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_LongBow.pdf" target="_blank">Download</a>
-This vehicle's team gains the "Spiral" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_Spiral.pdf" target="_blank">Download</a>
-This vehicle's team gains the "Spiral" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_Spiral.pdf" target="_blank">Download</a>
-This vehicle's team gains the "Spiral" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_Spiral.pdf" target="_blank">Download</a>
-This vehicle's team gains the "Spiral" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_Spiral.pdf" target="_blank">Download</a>
-This vehicle's team gains the "Spiral" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_Spiral.pdf" target="_blank">Download</a>
-This vehicle's team gains the "Spiral" template: <a href="https://gaslands.com/legacy/Gaslands_Legacy_Spiral.pdf" target="_blank">Download</a>
+This vehicle's team gains the "180" template.
+This vehicle's team gains the "180" template.
+This vehicle's team gains the "180" template.
+This vehicle's team gains the "180" template.
+This vehicle's team gains the "180" template.
+This vehicle's team gains the "Bow" template.
+This vehicle's team gains the "Bow" template.
+This vehicle's team gains the "Bow" template.
+This vehicle's team gains the "Bow" template.
+This vehicle's team gains the "Bow" template.
+This vehicle's team gains the "Doughnut" template.
+This vehicle's team gains the "Doughnut" template.
+This vehicle's team gains the "Doughnut" template.
+This vehicle's team gains the "Doughnut" template.
+This vehicle's team gains the "Doughnut" template.
+This vehicle's team gains the "Long Bow" template.
+This vehicle's team gains the "Long Bow" template.
+This vehicle's team gains the "Long Bow" template.
+This vehicle's team gains the "Long Bow" template.
+This vehicle's team gains the "Long Bow" template.
+This vehicle's team gains the "Spiral" template.
+This vehicle's team gains the "Spiral" template.
+This vehicle's team gains the "Spiral" template.
+This vehicle's team gains the "Spiral" template.
+This vehicle's team gains the "Spiral" template.
+This vehicle's team gains the "Spiral" template.

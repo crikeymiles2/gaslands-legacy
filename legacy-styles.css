@@ -25,9 +25,11 @@ h1, h2, h3, h4, table.fields th, table.fields td, button, select, input, label, 
 	text-decoration: none;
 }
 
-body.clue p.fluff
+body.clue p.fluff,
+body.clue p span.fluff
 {
 	font-family: 'Special Elite', sans-serif;
+	font-style: italic;
 }
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -99,7 +101,7 @@ button:active
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* SCREEN SIZE ADJUSTMENTS */
 
-
+table.fields th { width: 122px; }
 
 @media only screen and (min-width: 560px)
 {
@@ -131,18 +133,17 @@ button:active
 	table.fields th { width: 200px; }
 	#mutations button { width: 280px; }
 	p.unlocked-mutation { line-height: 29px; }
-}
+	table.fields th { 
+		width: 185px; 
+	}
 
+}
 
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* STRUCTURE & LAYOUT */
 
-
-table.fields th { 
-	width: 150px; 
-	}
 
 p { 
 	margin: 0.3em 0; 
@@ -198,6 +199,10 @@ table.fields td p {
 	color: grey;
 }
 
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* GENERAL STYLES */
 
 
 h3 { margin: 0.8em 0 0.3em 0; }
@@ -259,6 +264,10 @@ p.unlocked-mutation
 
 
 
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* CLUES */
+
 
 body.clue p
 {
@@ -268,7 +277,6 @@ body.clue p
 
 body.clue p.fluff
 {
-	font-style: italic;
 	line-height: 1.5em;
 	font-size: 90%; 
 	margin-bottom: 20px;
@@ -290,4 +298,6 @@ body.clue p.error
 	text-align: left;
 	font-size:80%;
 }
-
+ol.cluedump li {
+	margin-left: 25px;
+	}
