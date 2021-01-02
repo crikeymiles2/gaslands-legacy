@@ -28,6 +28,9 @@ Gain any one upgrade permanently.
 Gain any one upgrade permanently.
 Gain any one upgrade permanently.
 Gain any one upgrade permanently.
+Gain any one upgrade permanently.
+Gain any one weapon costing 2 cans or less permanently, and increase Crew by 1 permanently.
+Gain any one weapon costing 2 cans or less permanently, and increase Crew by 1 permanently.
 Gain any one weapon costing 2 cans or less permanently, and increase Crew by 1 permanently.
 Gain any one weapon costing 2 cans or less permanently, and increase Crew by 1 permanently.
 Gain any one weapon costing 2 cans or less permanently, and increase Crew by 1 permanently.
@@ -42,6 +45,9 @@ Gain any one weapon costing 4 cans or less permanently, and increase Crew by 1 p
 Gain any one weapon costing 4 cans or less permanently, and increase Crew by 1 permanently.
 Gain any one weapon costing 4 cans or less permanently, and increase Crew by 1 permanently.
 Gain any one weapon costing 4 cans or less permanently, and increase Crew by 1 permanently.
+Gain any one weapon costing 4 cans or less permanently, and increase Crew by 1 permanently.
+Gain any one weapon costing 4 cans or less permanently, and increase Crew by 1 permanently.
+Gain any one weapon permanently, and increase Crew by 1 permanently.
 Gain any one weapon permanently, and increase Crew by 1 permanently.
 Gain any one weapon permanently, and increase Crew by 1 permanently.
 Gain any one weapon permanently, and increase Crew by 1 permanently.
@@ -57,9 +63,13 @@ Increase Hull by 1 permanently.
 Increase Hull by 1 permanently.
 Increase Hull by 1 permanently.
 Increase Hull by 1 permanently.
+Increase Hull by 1 permanently.
 Increase Hull by 2 permanently.
 Increase Hull by 2 permanently.
 Increase Hull by 2 permanently.
+Increase Hull by 2 permanently.
+Increase Hull by 2 permanently.
+Increase Hull by 3 permanently.
 Increase Hull by 3 permanently.
 Increase this vehicle's weight by one class. (If this vehicle is already heavyweight, reveal another mutation.)
 Increase this vehicle's weight by one class. (If this vehicle is already heavyweight, reveal another mutation.)
@@ -67,34 +77,24 @@ One weapon on this vehicle gains turret-mounted.
 One weapon on this vehicle gains turret-mounted.
 One weapon on this vehicle gains turret-mounted.
 One weapon on this vehicle gains turret-mounted.
+One weapon on this vehicle gains turret-mounted.
+One weapon on this vehicle gains turret-mounted.
+One weapon on this vehicle gains turret-mounted.
+One weapon on this vehicle gains turret-mounted.
 This vehicle may ignore 1 of its hazard tokens when checking for wipeout. (This effect can stack.)
 This vehicle may ignore 1 of its hazard tokens when checking for wipeout. (This effect can stack.)
 This vehicle may ignore 1 of its hazard tokens when checking for wipeout. (This effect can stack.)
 This vehicle may ignore 1 of its hazard tokens when checking for wipeout. (This effect can stack.)
 This vehicle may ignore 1 of its hazard tokens when checking for wipeout. (This effect can stack.)
-This vehicle's team gains the "180" template.
-This vehicle's team gains the "180" template.
-This vehicle's team gains the "180" template.
-This vehicle's team gains the "180" template.
-This vehicle's team gains the "180" template.
-This vehicle's team gains the "Bow" template.
-This vehicle's team gains the "Bow" template.
-This vehicle's team gains the "Bow" template.
-This vehicle's team gains the "Bow" template.
-This vehicle's team gains the "Bow" template.
-This vehicle's team gains the "Doughnut" template.
-This vehicle's team gains the "Doughnut" template.
-This vehicle's team gains the "Doughnut" template.
-This vehicle's team gains the "Doughnut" template.
-This vehicle's team gains the "Doughnut" template.
-This vehicle's team gains the "Long Bow" template.
-This vehicle's team gains the "Long Bow" template.
-This vehicle's team gains the "Long Bow" template.
-This vehicle's team gains the "Long Bow" template.
-This vehicle's team gains the "Long Bow" template.
-This vehicle's team gains the "Spiral" template.
-This vehicle's team gains the "Spiral" template.
-This vehicle's team gains the "Spiral" template.
-This vehicle's team gains the "Spiral" template.
-This vehicle's team gains the "Spiral" template.
-This vehicle's team gains the "Spiral" template.
+Select one of this team's templates: shade in one new permitted gear.
+Select one of this team's templates: shade in one new permitted gear.
+Select one of this team's templates: shade in one new permitted gear.
+Select one of this team's templates: shade in one new permitted gear.
+Select one of this team's templates: add one SHIFT icon to any permitted gear.
+Select one of this team's templates: add one SHIFT icon to any permitted gear.
+Select one of this team's templates: add one SHIFT icon to any permitted gear.
+Select one of this team's templates: add one SHIFT icon to any permitted gear.
+Select one of this team's templates: cross out one HAZARD icon to any permitted gear.
+Select one of this team's templates: cross out one HAZARD icon to any permitted gear.
+Select one of this team's templates: cross out one HAZARD icon to any permitted gear.
+Select one of this team's templates: cross out one HAZARD icon to any permitted gear.

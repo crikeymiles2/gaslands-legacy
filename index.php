@@ -2,7 +2,7 @@
 
 <html lang="en">
 <head>
-	<title>Gaslands: Legacy<?php IF(ISSET($_GET['vehicle-name'])) { echo " - " . $_GET['vehicle-name']; } ?></title>
+	<title><?php IF(ISSET($_GET['vehicle-name'])) { echo $_GET['vehicle-name'] . " - "; } ?>Gaslands: Legacy</title>
 	<meta name="description" content="Create your Gaslands: Legacy vehicle!">
 	<meta property="og:site_name" content="Gaslands" />
 	<meta property="og:image" content="https://i2.wp.com/gaslands.com/wp-content/uploads/SKM_C25820092208520_grunge.jpg?fit=900%2C637&amp;ssl=1" />
@@ -170,28 +170,28 @@ $hull_roll = substr($vehicle_hash,0,1);
 
 switch ($hull_roll) {
     case 1:
-        $modifier = -1;
+        $modifier = 0;
         break;
     case 2:
-        $modifier = -1;
+        $modifier = 0;
         break;
     case 3:
         $modifier = 0;
         break;    
     case 4:
-        $modifier = 0;
+        $modifier = 1;
         break;     
     case 5:
-        $modifier = 0;
+        $modifier = 1;
         break;    
     case 6:
-        $modifier = 1;
+        $modifier = 2;
         break;    
     case 7:
-        $modifier = 1;
+        $modifier = 2;
         break;    
     case 8:
-        $modifier = 2;
+        $modifier = 3;
         break;
     case 9:
         $modifier = 3;
@@ -206,7 +206,7 @@ switch ($hull_roll) {
 $hull_modifier = $modifier;
 if($vehicle_type == "buggy") { $hull_modifier = max($hull_modifier,0); }
 $hull = $default_stats[$vehicle_type]['hull'] + $hull_modifier;
-$vehicle_cost = $vehicle_cost + $modifier;
+$vehicle_cost = $vehicle_cost + (2*$hull_modifier);
 
 
 ////////////////////////////////////////////////////////////////

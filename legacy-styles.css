@@ -17,6 +17,10 @@ h1, h2, h3, h4, table.fields th, table.fields td, button, select, input, label, 
 	text-transform: uppercase;
 }
 
+select, input  {
+	text-transform: none;
+}
+
 .back-button { 
 	font-family: 'Russo One', sans-serif;
 	text-transform: small-caps;
@@ -30,6 +34,10 @@ body.clue p span.fluff
 {
 	font-family: 'Special Elite', sans-serif;
 	font-style: italic;
+}
+
+footer {
+	padding-bottom: 40px;
 }
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
